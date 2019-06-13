@@ -18,16 +18,16 @@ const routing = (
 	<div>
 
 		<ul>
-		  <li><Link to = "/Home">Home</Link></li>
-		 <li><Link to = "./Campus">Campuses</Link></li>
-		 <li><Link to = "./Students">Students</Link></li>
+		  <li><Link to = "Home">Home</Link></li>
+		 <li><Link to = "Campus">Campuses</Link></li>
+		 <li><Link to = "Students">Students</Link></li>
 			
 		</ul>
 
 	<Switch>
 		<Route exact path = "/Home" component ={Home} />
-		<Route component ={Campus}/>
-		<Route component ={Students}/>
+		<Route path = "/Campus" component ={Campus}/>
+		<Route path = "/Students" component ={Students}/>
 		
 		<Route component ={Notfound}/>
 	</Switch>
