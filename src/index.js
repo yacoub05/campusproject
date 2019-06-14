@@ -7,6 +7,7 @@ import Home from './Home';
 import Students from './Students';
 import Notfound from './notfound';
 import Campus from './Campus'
+import addNewCampus from './addNewCampus';
 import addNewStudent from './addNewStudent';
 
 
@@ -17,7 +18,6 @@ const routing = (
 	<Router>
 
 		<div>
-
 			<ul>
 				<li><Link to="Home">Home</Link></li>
 				<li><Link to="Campus">Campuses</Link></li>
@@ -30,6 +30,7 @@ const routing = (
 				<Route path="/Campus" component={Campus} />
 				<Route path="/Students" component={Students} />
 				<Route path="/addNewStudent" component={addNewStudent} />
+				<Route path="/addNewCampus" component={addNewCampus} />
 
 				<Route component={Notfound} />
 			</Switch>
