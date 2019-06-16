@@ -16,4 +16,4 @@ const StudentItem = (props) => {
   )
 };
 
-export default GifItem;
+export default StudentItem;

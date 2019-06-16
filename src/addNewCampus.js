@@ -16,10 +16,10 @@ class addNewCampus extends React.Component{
     render(){
         return (
             <div>
-                <h2>Enter Campus Name</h2>
+                <h2>NEW CAMPUS FORM</h2>
                 <form>
-                    Campus Name:
-                    <input value={this.state.campusName} placeholder="campusName " onChange ={this.handleChange}/>
+                    
+                    <input value={this.state.campusName} placeholder="Campus Name " onChange ={this.handleChange}/>
                     <Link to = "/Campus"><button>Add Campus</button></Link>
                 </form>
             </div>
