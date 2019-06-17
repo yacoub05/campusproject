@@ -43,7 +43,9 @@ class deletestudent extends React.Component {
            <input value={this.state.firstname} placeholder="firstname " onChange={this.handleChange} />
                     Last Name:
            <input value={this.state.lastname} onChange={this.handleChange2} />
-                    <Link to="/Students"> <button>delete Student</button> </Link>
+                    <Link to="/Students"> <button>delete Student</button> </Link> <br/>
+                    <Link to="/Students"> <button>Back</button> </Link>
+
                 </form>
 
             </div>

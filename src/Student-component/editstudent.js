@@ -44,7 +44,9 @@ class editstudent extends React.Component {
            <input value={this.state.firstname} placeholder="firstname " onChange={this.handleChange} />
                     Last Name:
            <input value={this.state.lastname} onChange={this.handleChange2} />
-                    <Link to="/Students"> <button>Edit Student</button> </Link>
+                    <Link to="/Students"> <button>Edit Student</button> </Link><br/>
+                    <Link to="/Students"> <button>Back</button> </Link>
+
                 </form>
                 {/* <Dropdown title="Select Students" /> go to this link to see how to connect https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e94f02ced4a1/ */}
             </div>

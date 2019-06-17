@@ -19,9 +19,9 @@ const routing = (
 	<Router>
 
 		<div class="container">
-			<h1>Welcome to Future College</h1>
+			
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">FUTURE COLLEGE</a>
+				<a class="navbar-brand" >BRONX COLLEGE</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -42,7 +42,7 @@ const routing = (
 					
   					</div>
 				</nav>
-				
+
 		
 
 			<Switch>

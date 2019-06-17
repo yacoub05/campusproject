@@ -17,9 +17,7 @@ class Campus extends React.Component{
     return  (
       <div>
       <h1>All Campuses</h1>
-        <Link to="/addNewCampus"> <button >
-            Add Campus
-      </button></Link><br /> <br />
+        <Link to="/addNewCampus"> <button >Add Campus</button></Link><br /> <br />
       <Link to="/showCampus"><button>Show Campus</button></Link> <br/> <br/>
       <Link to="/editCampus"><button>Edit Campus</button></Link>
       <form>
