@@ -6,8 +6,8 @@ const StudentItem = (props) => {
         <div>
             
             <img src={props.gif} />
-            <lable>{studentname}</lable>
-            <lable>{campusname}</lable>
+            <lable>{Studentname}</lable>
+            <lable>{Campusname}</lable>
 
         </div>
       

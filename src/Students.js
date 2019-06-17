@@ -1,8 +1,10 @@
 import React from 'react';
 import addNewStudent from './Student-component/addNewStudent';
-import deletestudent from './Student-component/deletestudent';
-import editstudent from './Student-component/editstudent';
+// import deletestudent from './Student-component/deletestudent';
+// import editstudent from './Student-component/editstudent';
+// import StudentList from './Student-component/StudentList';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 class Students extends React.Component {
@@ -12,6 +14,18 @@ class Students extends React.Component {
       students: []
     };
   }
+
+  componentDidMount() {
+    console.log('inside component did mount');
+    axios.get(`http://localhost:4000/students`)
+      .then(res => {
+        this.setState({ students: res.data })
+
+
+        console.log(res.data);
+      }).catch(err => console.log("Error from get request", err))
+  }
+
   render() {
     //var addstudent = <addNewStudent />;
     return (
@@ -23,9 +37,9 @@ class Students extends React.Component {
         <Link to="/Student-component/deletestudent"> <button >
           Delete Student
      </button></Link> <br /> <br />
-        <Link to="/Student-component/editstudent"> <button >
+        {/* <Link to="/Student-component/editstudent"> <button >
           Edit Student
-     </button></Link>
+     </button></Link> */}
       </div>
     );
   }

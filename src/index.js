@@ -65,6 +65,5 @@ const routing = (
 
 )
 
-console.ignoredYellowBox = ['Warning: Each', 'Warning: Failed'];
 ReactDOM.render(routing, document.getElementById('root'));
 

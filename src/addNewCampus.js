@@ -1,41 +1,57 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+class addNewCampuses extends React.Component {
 
-class addNewCampus extends React.Component{
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-        campusName: ''
+
+            campusname: ' ',
+
         };
     }
 
     handleChange = e => {
-         this.setState({ 'campusName': e.target.value 
-         });
+        this.setState({ 'campusname': e.target.value });
+    };
+
+
+    handleOnSubmit = (event) => {
+        // alert(this.state.name + " you select " + this.state.language + " as your default programming language");
+        let data = {
+            campusname: this.state.campusname,
+
+        }
+        axios.post(`http://localhost:4000/addCampus`, data)
+            .then(res => {
+
+
+                console.log(res.data);
+                console.log('hello there');
+
+            });
+
+
     }
-    render(){
+    render() {
         return (
             <div>
-                <h2>NEW CAMPUS FORM</h2>
+                <h2>Campus Name</h2>
 
                 <form>
-                    <div className="form-group">
-                        <label for="entername">Enter Campus Name</label>
-                        <input type="text" class="form-control" id="campus-name" aria-describedby="emailHelp" />
-                            {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
-                    </div>
-                    {/* <div class="form-group">
-                        <label for="picturelink">Enter picture link</label>
-                        <input type="link" class="form-control" id="picture-link" /> 
-                    </div>*/}
+                    Campus Name:
+            <input value={this.state.campusname} placeholder="campus name " onChange={this.handleChange} />
 
-                    <Link to="/Campus"><button type="submit" class="btn btn-dark">Add Campus</button> </Link> 
+
+                    <Link to="/Campus"> <button onClick={this.handleOnSubmit}>Add Campus</button> </Link>
+
                 </form>
+
+
 
             </div>
         );
     }
-
 }
-
-export default addNewCampus;
+export default addNewCampuses;
