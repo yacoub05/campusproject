@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-class addNewStudent extends React.Component {
+// import console = require('console');
 
+
+
+class addNewStudent extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -28,10 +32,9 @@ class addNewStudent extends React.Component {
 
   };
 
-
-
-
   render() {
+    console.log(this.props);
+  
     return (
       <div>
         <h2>Student Name</h2>
@@ -42,8 +45,11 @@ class addNewStudent extends React.Component {
           Last Name:
            <input value={this.state.lastname} onChange={this.handleChange2} />
           <Link to="/Students"> <button>Add Student</button> </Link>
-        </form>
+          <Link to="/Students"> <button>Back</button> </Link>
+          
 
+        </form> 
+        <Link to="/Students"></Link>
       </div>
 
     );

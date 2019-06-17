@@ -3,6 +3,8 @@ import addNewStudent from './Student-component/addNewStudent';
 import deletestudent from './Student-component/deletestudent';
 import editstudent from './Student-component/editstudent';
 import { Link } from 'react-router-dom';
+
+
 class Students extends React.Component {
   constructor(props) {
     super(props);
@@ -17,10 +19,10 @@ class Students extends React.Component {
         <h1>All Students</h1>
         <Link to="/Student-component/addNewStudent"> <button >
           Add Student
-     </button></Link>
+     </button></Link> <br /> <br />
         <Link to="/Student-component/deletestudent"> <button >
           Delete Student
-     </button></Link>
+     </button></Link> <br /> <br />
         <Link to="/Student-component/editstudent"> <button >
           Edit Student
      </button></Link>
