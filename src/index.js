@@ -18,7 +18,7 @@ const routing = (
 
 	<Router>
 
-		<div>
+		<div class="container">
 			<h1>Welcome to Future College</h1>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="#">FUTURE COLLEGE</a>
@@ -42,6 +42,7 @@ const routing = (
 					
   					</div>
 				</nav>
+				
 		
 
 			<Switch>
