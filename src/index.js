@@ -7,8 +7,9 @@ import Home from './Home';
 import Students from './Students';
 import Notfound from './notfound';
 import Campus from './Campus'
-import addNewCampus from './addNewCampus';
+import addNewCampuses from './addNewCampuses';
 import addNewStudent from './Student-component/addNewStudent';
+//import addNewCampuses from './Student-component/addNewCampuses';
 import deletestudent from './Student-component/deletestudent';
 import editstudent from './Student-component/editstudent';
 import	editCampus from './editCampus';
@@ -47,10 +48,10 @@ const routing = (
 
 			<Switch>
 				<Route exact path="/" component={Home} />
-				<Route exact path="/Campus" component={Campus} />
-				<Route path="/addNewCampus" component={addNewCampus} />
+				<Route path="/Campus" component={Campus} />
+				<Route path="/addNewCampuses" component={addNewCampuses} />
 				<Route path="/editCampus" component={editCampus} />
-				<Route exact path="/Students" component={Students} />
+				<Route  path="/Students" component={Students} />
 				<Route path="/Student-component/addNewStudent" component={addNewStudent} />
 				<Route path="/Student-component/deletestudent" component={deletestudent}/>
 				<Route path="/Student-component/editstudent" component ={editstudent}/>
