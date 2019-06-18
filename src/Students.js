@@ -33,10 +33,10 @@ class Students extends React.Component {
         <h1>All Students</h1>
         <Link to="/Student-component/addNewStudent"> <button >
           Add Student
-     </button></Link> <br /> <br />
+     </button></Link> 
         <Link to="/Student-component/deletestudent"> <button >
           Delete Student
-     </button></Link> <br /> <br />
+     </button></Link> 
         {/* <Link to="/Student-component/editstudent"> <button >
           Edit Student
      </button></Link> */}
