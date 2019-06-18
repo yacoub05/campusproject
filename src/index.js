@@ -13,7 +13,7 @@ import deletestudent from './Student-component/deletestudent';
 import editstudent from './Student-component/editstudent';
 import	editCampus from './editCampus';
 
-
+  // this is a chagne! test!
 const routing = (
 
 	<Router>
